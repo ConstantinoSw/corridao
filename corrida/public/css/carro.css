@@ -1,0 +1,72 @@
+body {
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+ }
+.container-estiloso {
+    background: linear-gradient(135deg, #ff6f61, #de5068);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.container-estiloso:hover {
+    transform: translateY(-10px);
+}
+
+.container-estiloso:before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+    transition: transform 0.3s ease;
+    transform: rotate(45deg) translate(0, 0);
+}
+
+.container-estiloso:hover:before {
+    transform: rotate(45deg) translate(50%, 50%);
+}
+
+.titulo {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.descricao {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.botao {
+    background-color: white;
+    color: #de5068;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #ff6f61;
+    color: white;
+}
+

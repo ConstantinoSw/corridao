@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA com Navbar</title>
+    <link rel="stylesheet" href="./public/css/estilo.css">
+    <script src="./public/js/script.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="./public/home.html" class="nav-link" data-target="home">Home</a>
+        <a href="./public/servicos.html" class="nav-link" data-target="about">Sobre</a>
+        <a href="./public/servicos.html" class="nav-link" data-target="services">Serviços</a>
+        <a href="./public/contatos.html" class="nav-link" data-target="contact">Contato</a>
+    </nav>
+
+    <main id="content">
+        <section id="home" class="content-section active">
+            <h1>Bem-vindo à Home</h1>
+            <p>Este é o conteúdo da página inicial.</p>
+        </section>
+
+        <section id="about" class="content-section">
+            <h1>Sobre Nós</h1>
+            <p>Informações sobre a nossa empresa.</p>
+        </section>
+
+        <section id="services" class="content-section">
+            <h1>Nossos Serviços</h1>
+            <p>Descrição dos serviços que oferecemos.</p>
+        </section>
+
+        <section id="contact" class="content-section">
+            <h1>Contato</h1>
+            <p>Informações de contato.</p>
+        </section>
+    </main>
+
+    <div class="login-container">
+        <h1>Login</h1>
+        <form action="login.php" method="post">
+            <div class="input-group">
+                <label for="username">Usuário</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+    <style>
+        body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #f0f0f0;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('./public/css/fotos/corrida.jpg');
+    }
+    
+    .login-container {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    }
+    
+    h1 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+    
+    .input-group {
+        margin-bottom: 15px;
+        text-align: left;
+    }
+    
+    .input-group label {
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+    }
+    
+    .input-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    button {
+        background: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    button:hover {
+        background: #0056b3;
+    }
+  </style>
+</body>
+</html>
