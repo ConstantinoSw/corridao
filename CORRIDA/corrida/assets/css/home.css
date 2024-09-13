@@ -1,0 +1,10 @@
+.container {
+    background-color: #3498db; /* Cor azul do contêiner */
+    color: white; /* Cor do texto dentro do contêiner */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    text-align: center; /* Alinha o texto ao centro */
+    width: 80%; /* Largura do contêiner relativa à largura da tela */
+    max-width: 600px; /* Largura máxima do contêiner */
+}

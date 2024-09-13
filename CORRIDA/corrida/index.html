@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA com Menu Fixo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" onclick="loadPage('home.html')">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item"></li>
+                <a class="nav-link" href="#" onclick="loadPage('produto.html')">produto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="loadPage('adm.html')">adm</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="loadPage('loginn.html')">login</a>
+              </li>
+              
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+     
+    <div id="content" class="content">
+        <!-- Conteúdo dinâmico será carregado aqui -->
+    </div>
+    
+    <footer>
+      <p>&copy; 2024 MinhaEmpresa | Todos os direitos reservados</p>
+      <div>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </div>
+    </footer>
+    <style> html, body {
+      height: 100%;
+      margin: 0;
+      background-image: url('../corrida/assets/fotos/ta.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+    margin: 0;
+    }
+    
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+    
+    </style>
+    
+    <script src="public/js/script.js"></script>
+    <script>
+      // script.js
+      
+      // Quando o DOM estiver totalmente carregado
+      document.addEventListener('DOMContentLoaded', () => {
+          // Obtém o botão e o elemento de cabeçalho pelo ID
+          const button = document.getElementById('myButton');
+          const header = document.getElementById('header');
+      
+          // Adiciona um evento de clique ao botão
+          button.addEventListener('click', () => {
+              // Muda o texto do elemento de cabeçalho quando o botão é clicado
+              header.textContent = 'Você clicou no botão!';
+          });
+      });
+      
+              
+          </script>
+    
+</body>
+
+</html>
